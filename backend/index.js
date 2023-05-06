@@ -2,8 +2,12 @@ const fastify = require("fastify")({
   logger: true,
 });
 
-fastify.get("/", async (request, reply) => {
-  return { hello: "world" };
+require("./utils/database.connection");
+
+const routes = require("./routes/staff.routes");
+
+routes.forEach((route) => {
+  fastify.route(route);
 });
 
 const start = async () => {
