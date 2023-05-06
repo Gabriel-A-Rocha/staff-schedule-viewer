@@ -4,7 +4,8 @@
   "description": "Staff Schedule Viewer API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Gabriel A. Rocha",
   "license": "ISC",

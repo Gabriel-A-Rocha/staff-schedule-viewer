@@ -12,7 +12,7 @@ mongoose
     loadSeedData();
   })
   .catch((err) => {
-    console.error(`MongoDB connection failed. Error: ${err.message}.`);
+    console.error(`MongoDB connection failed - Error: ${err.message}`);
   });
 
 async function loadSeedData() {
@@ -29,8 +29,8 @@ async function loadSeedData() {
       await data.save();
     }
 
-    console.log("Seed data uploaded successfully.");
+    console.log("Seed data uploaded successfully");
   } catch (error) {
-    console.error(`Failed loading seed data. Error: ${error.message}`);
+    console.error(`Failed loading seed data - Error: ${error.message}`);
   }
 }

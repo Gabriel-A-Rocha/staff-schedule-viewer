@@ -5,7 +5,6 @@ const fastify = require("fastify")({
 require("./utils/database.connection");
 
 const routes = require("./routes/staff.routes");
-
 routes.forEach((route) => {
   fastify.route(route);
 });
