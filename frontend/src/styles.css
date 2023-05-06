@@ -1,0 +1,58 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: hsl(200, 100%, 90%);
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  background: hsl(200, 100%, 50%, 0.1);
+  border: 1px solid hsl(200, 100%, 50%);
+  color: hsl(200, 100%, 50%);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+  margin-right: 0.5rem;
+  width: 6rem;
+}
+
+button[disabled] {
+  background: hsla(180, 1%, 32%, 0.1);
+  border: 1px solid hsl(197, 10%, 86%);
+  color: hsl(204, 8%, 64%);
+  cursor: default;
+}
+
+button[disabled]:hover {
+  background: hsla(180, 1%, 32%, 0.1);
+}
+
+button:hover,
+button:focus-visible {
+  background: hsl(200, 100%, 50%, 0.2);
+}
+
+button .link {
+  text-decoration: none;
+  color: rgb(202, 169, 23);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
